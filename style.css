@@ -1,0 +1,126 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap'); 
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body 
+{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(217, 54%, 11%);
+    color: hsl(215, 51%, 70%);
+    font-family: 'Outfit', sans-serif;
+}
+a 
+{
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+}
+a:hover 
+{
+    color: hsl(178, 100%, 50%);
+}
+main 
+{
+    width: min(100%, 30rem);
+}
+.card 
+{
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 20px;
+    padding: 2em;
+    margin: 1em;
+}
+.card-product-img-section 
+{
+    position: relative;
+    display: flex;
+    cursor: pointer;
+}
+.card-product-img 
+{
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 20px;
+}
+.card-product-img-section::after
+{
+    content: url(images/icon-view.svg);
+    position: absolute;
+    top: 0%;
+    background-color: hsla(178, 100%, 50%, 50%);
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease-in-out;
+    opacity: 0;
+}
+.card-product-img-section:hover::after 
+{
+    opacity: 1;
+}
+.card-title
+{
+    padding: 1.3em 0;
+}
+.card-bio
+{
+    max-width: 90%;
+}
+.card-price-section
+{
+    padding: 1em 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card-price
+{
+    color: hsl(178, 100%, 50%);
+    font-weight: 600;
+    font-size: 1em;
+}
+.card-days-left
+{
+    font-size: 1em;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+}
+.card-author-section
+{
+    width: 100%;
+    border-top: 1px solid hsl(215, 32%, 27%);
+    padding-top: 1em;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+}
+.card-author-name
+{
+    padding-left: 1em;
+}
+.card-author-img
+{
+    width: 2em;
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+}
+footer 
+{
+    padding-top: 2em;
+}
+
